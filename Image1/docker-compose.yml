@@ -1,0 +1,7 @@
+version: '3'
+services:
+  micro:
+    build: .
+    image: micro-java
+    ports:
+      - "5000:8010"
