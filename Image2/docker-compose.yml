@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  micro2:
+    build: .
+    image: micro-golang
+    ports:
+      - "5010:8020"
