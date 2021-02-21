@@ -15,7 +15,7 @@ public class SwaggerConfig {
     public Docket apiDocket() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.demo.controllers"))
+                .apis(RequestHandlerSelectors.basePackage("com.challenge.microservice.controllers"))
                 .paths(PathSelectors.any())
                 .build();
     }
