@@ -1,0 +1,25 @@
+info:
+  contact: {}
+  description: User microservice server.
+  title: User API
+paths:
+  /health:
+    get:
+      description: Endpoint health
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: type
+      summary: Health
+      tags:
+      - health
+schemes:
+- http
+- https
+securityDefinitions:
+  BasicAuth:
+    type: basic
+swagger: "2.0"
