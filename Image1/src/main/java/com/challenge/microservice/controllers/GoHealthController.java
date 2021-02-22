@@ -13,7 +13,7 @@ public class GoHealthController {
     public StatusGoRest handlerGoHealth() {
 
         RestTemplate restTemplate = new RestTemplate();
-        StatusGoRest status = restTemplate.getForObject("http://localhost:5010/health", StatusGoRest.class);
+        StatusGoRest status = restTemplate.getForObject("http://image2_micro2_1:5010/health", StatusGoRest.class);
 
         return status;
     }

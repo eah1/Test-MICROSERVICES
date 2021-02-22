@@ -6,7 +6,7 @@
 # Description: Create images docker microservice Java and Go
 ########################################################################################
 
-docker network create external-example
+docker network create -d bridge mynet
 
 # Microservice Java
 mvn -f Image1/pom.xml clean package
