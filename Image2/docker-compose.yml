@@ -5,3 +5,7 @@ services:
     image: micro-golang
     ports:
       - "5010:8020"
+networks:
+  default:
+    external:
+      name: external-example

@@ -5,3 +5,7 @@ services:
     image: micro-java
     ports:
       - "5000:8010"
+networks:
+  default:
+    external:
+      name: external-example
