@@ -3,9 +3,10 @@ services:
   micro2:
     build: .
     image: micro-golang
+    networks:
+      - sonarnet
     ports:
       - "5010:8020"
 networks:
-  default:
-    external:
-      name: external-example
+  sonarnet:
+    driver: bridge

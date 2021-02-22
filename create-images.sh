@@ -5,9 +5,6 @@
 # Arguments:
 # Description: Create images docker microservice Java and Go
 ########################################################################################
-
-docker network create -d bridge mynet
-
 # Microservice Java
 mvn -f Image1/pom.xml clean package
 docker-compose -f Image1/docker-compose.yml build

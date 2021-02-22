@@ -3,9 +3,10 @@ services:
   micro:
     build: .
     image: micro-java
+    networks:
+      - sonarnet
     ports:
       - "5000:8010"
 networks:
-  default:
-    external:
-      name: external-example
+  sonarnet:
+    driver: bridge
